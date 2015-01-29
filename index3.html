@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1"/>
+  <title>Esqueleto de WEB APP</title>
+  <link rel="stylesheet" href="c/jquery.mobile.min.css"/>
+  <script src="j/jquery.min.js"></script>
+  <script src="j/jquery.mobile.min.js"></script>
+</head>
+<body>
+  <!--Single Page Aplication SPA -->
+  <!-- JQM Multipage Template -->
+  <div data-role="page" id="pag1">
+    <div data-role="header" data-position="fixed">
+      <h1>Lista Simple</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <h1>Curriculum Vitae</h1>
+      <ul data-role="listview" data-inset="true">
+         <li><a href>Datos generales</a></li>
+         <li><a href>Experiencia laboral</a></li>
+         <li><a href>Educación</a></li>
+         <li><a href>Otros intereses</a></li>
+      </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <a href="#pag2"> Pagina 2 </a>
+      <a href="#pag3"> Pagina 3 </a>
+    </div>
+  </div>
+
+  <div data-role="page" id="pag2">
+    <div data-role="header" data-position="fixed">
+      <h1>Segunda página</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <h1>Curriculum Vitae</h1>
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar Alumno" data-autodividers="true">
+        <li><a href>Alejandra<span class="ui-li-count">45</span></a></li>
+        <li><a href>Alejandro</a></li>
+        <li><a href>Armando</a></li>
+        <li><a href>David</a></li>
+        <li><a href>Freddy</a></li>
+        <li><a href>Heber</a></li>
+        <li><a href>Jansy</a></li>
+        <li><a href>Juan</a></li>
+        <li><a href>Kenmy</a></li>
+        <li><a href>Rafael</a></li>
+        <li><a href>Ramon</a></li>
+        <li><a href>Ramon</a></li>
+      </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>Derechos 2015</h4>
+    </div>
+  </div>
+</body>
+</html>
+
+<div data-role="page" id="pag3">
+  <div data-role="header">
+    <h1>Tercera página</h1>
+  </div>
+  <div role="main" class="ui-content">
+    <p>El contenido va aqui <br/> <a href="#pag1">Ir a página 1 </a></p>
+  </div>
+  <div data-role="footer">
+    <h4>Derechos 2015</h4>
+  </div>
+</div>
+</body>
+</html>
