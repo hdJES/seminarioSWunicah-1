@@ -21,7 +21,7 @@
       <ul data-role="listview" data-inset="true">
          <li><a href>Datos generales</a></li>
          <li><a href>Experiencia laboral</a></li>
-         <li><a href>Educación</a></li>
+         <li><a href="#pag4">Educación</a></li>
          <li><a href>Otros intereses</a></li>
       </ul>
     </div>
@@ -56,19 +56,75 @@
       <h4>Derechos 2015</h4>
     </div>
   </div>
-</body>
-</html>
 
-<div data-role="page" id="pag3">
-  <div data-role="header">
-    <h1>Tercera página</h1>
+  <div data-role="page" id="pag3">
+    <div data-role="header" data-position="fixed">
+      <h1>Tercera Página</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <h1>Curriculum Vitae</h1>
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar Alumno" data-autodividers="true">
+        <li data-icon="info"><a href><img src="i/gato.jpg"/>Alejandra<span class="ui-li-count">45</span></a></li>
+        <li data-icon="check"><a href>Alejandro</a></li>
+        <li data-icon="forbidden"><a href>Armando</a><p>Este es un artículo</p></li>
+        <li data-icon="refresh"><a href>David</a></li>
+        <li><a href>Freddy</a></li>
+        <li><a href>Heber</a></li>
+        <li><a href>Jansy</a></li>
+        <li><a href>Juan</a></li>
+        <li><a href>Kenmy</a></li>
+        <li><a href>Rafael</a></li>
+        <li><a href>Ramon</a></li>
+        <li><a href>Ramon</a></li>
+      </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>Derechos 2015</h4>
+    </div>
   </div>
-  <div role="main" class="ui-content">
-    <p>El contenido va aqui <br/> <a href="#pag1">Ir a página 1 </a></p>
+
+  <div data-role="page" id="pag4">
+    <div data-role="header" data-position="fixed">
+      <h1>Cuarta Página</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <h1>Formulario</h1>
+         <form id="form1">
+           <div class="ui-field-contain">
+             <label for="txt1">Un campo de texto</label>
+             <input type="text" id="txt1"
+             name="txt1" placeholder="Un campo"/>
+           </div>
+           <div class="ui-field-contain">
+             <label for="slider1">Un slider</label>
+             <input type="range" id="slider1"
+             name="slider1" min="0" max="100" value="50" step="10"/>
+           </div>
+
+           <div class="ui-field-contain">
+             <div data-role="rangeslider">
+               <label for="slider2a">Asistólica</label>
+               <input type="range" id="slider2a"
+               name="slider2a" min="0" max="200" value="75" step="1"/>
+               <label for="slider2b">Asistólica</label>
+               <input type="range" id="slider2b"
+               name="slider2b" min="0" max="200" value="110" step="1"/>
+             </div>
+           </div>
+
+           <div class="ui-field-contain">
+               <label for="slider2a">Asistólica</label>
+               <input type="range" id="slider2a"
+               name="slider2a" min="0" max="200" value="75" step="1"/>
+               <label for="slider2b">Asistólica</label>
+               <input type="range" id="slider2b"
+               name="slider2b" min="0" max="200" value="110" step="1"/>
+            </div>
+         </form>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>Derechos 2015</h4>
+    </div>
   </div>
-  <div data-role="footer">
-    <h4>Derechos 2015</h4>
-  </div>
-</div>
 </body>
 </html>
